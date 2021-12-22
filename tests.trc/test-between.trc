@@ -1,0 +1,55 @@
+/export/app/oracle/admin/ot10g/udump/o10g_ora_12345.trc
+Oracle Database 10g Enterprise Edition Release 10.1.0.2.0 - Production
+With the Partitioning and Data Mining options
+ORACLE_HOME = /export/app/oracle/product/10.1.0
+System name:	Linux
+Node name:	m1
+Release:	2.4.26
+Version:	#8 SMP Tue Apr 27 19:31:53 OMSST 2004
+Machine:	i686
+Instance name: o10g
+Redo thread mounted by this instance: 1
+Oracle process number: 16
+Unix process pid: 20253, image: oracle@vt (TNS V1-V3)
+
+*** ACTION NAME:() 2005-02-24 16:28:29.386
+*** MODULE NAME:(SQL*Plus) 2005-02-24 16:28:29.386
+*** SERVICE NAME:(SYS$USERS) 2005-02-24 16:28:29.386
+*** SESSION ID:(555.55555) 2005-02-24 16:28:29.386
+=====================
+PARSING IN CURSOR #1 len=38 dep=0 uid=43 oct=7 lid=43 tim=1083243133004369 hv=50100893 ad='56782910'
+delete from v1 where owner like 'SYS%'
+END OF STMT
+PARSE #1:c=10000,e=357,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,tim=1083243133004364
+WAIT #1: nam='db file sequential read' ela= 27 p1=4 p2=2276 p3=1
+WAIT #1: nam='enq: TX - row lock contention' ela= 2291371 p1=1415053318 p2=262173 p3=2107
+WAIT #1: nam='log buffer space' ela= 70417 p1=0 p2=0 p3=0
+=====================
+PARSING IN CURSOR #2 len=36 dep=1 uid=0 oct=3 lid=0 tim=1083243139156628 hv=1570213724 ad='57a41d74'
+select file# from file$ where ts#=:1
+END OF STMT
+PARSE #2:c=0,e=119,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=4,tim=1083243139156616
+EXEC #2:c=0,e=63,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=4,tim=1083243139156815
+FETCH #2:c=0,e=73,p=0,cr=3,cu=0,mis=0,r=1,dep=1,og=4,tim=1083243139156918
+FETCH #2:c=0,e=8,p=0,cr=1,cu=0,mis=0,r=0,dep=1,og=4,tim=1083243139156959
+STAT #2 id=1 cnt=1 pid=0 pos=1 obj=17 op='TABLE ACCESS FULL FILE$ (cr=4 pr=0 pw=0 time=64 us)'
+WAIT #1: nam='db file scattered read' ela= 194 p1=4 p2=891 p3=14
+WAIT #1: nam='log buffer space' ela= 37201 p1=0 p2=0 p3=0
+=====================
+PARSING IN CURSOR #2 len=36 dep=1 uid=0 oct=3 lid=0 tim=1083243139833550 hv=1570213724 ad='57a41d74'
+select file# from file$ where ts#=:1
+END OF STMT
+PARSE #2:c=0,e=103,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=4,tim=1083243139833539
+EXEC #2:c=0,e=60,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=4,tim=1083243139833723
+FETCH #2:c=0,e=70,p=0,cr=3,cu=0,mis=0,r=1,dep=1,og=4,tim=1083243139833823
+FETCH #2:c=0,e=9,p=0,cr=1,cu=0,mis=0,r=0,dep=1,og=4,tim=1083243139833861
+WAIT #1: nam='log buffer space' ela= 17379 p1=0 p2=0 p3=0
+WAIT #1: nam='db file scattered read' ela= 194 p1=4 p2=891 p3=14
+EXEC #1:c=40000000,e=41942651,p=3546,cr=4704,cu=144173,mis=0,r=129432,dep=0,og=1,tim=1083243182553284
+WAIT #1: nam='SQL*Net message to client' ela= 4 p1=1650815232 p2=1 p3=0
+WAIT #1: nam='SQL*Net message from client' ela= 224 p1=1650815232 p2=1 p3=0
+=====================
+PARSING IN CURSOR #2 len=52 dep=0 uid=43 oct=47 lid=43 tim=1083243142553879 hv=1029988163 ad='578a915c'
+BEGIN DBMS_OUTPUT.GET_LINES(:LINES, :NUMLINES); END;
+END OF STMT
+PARSE #2:c=0,e=96,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=1,tim=1083243142553874

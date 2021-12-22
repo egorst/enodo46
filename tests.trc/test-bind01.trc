@@ -1,0 +1,10 @@
+=====================
+PARSING IN CURSOR #61 len=30 dep=0 uid=47 oct=3 lid=47 tim=1096584486591094 hv=2424959348 ad='6c3e169c'
+SELECT 911 FROM SOME_TABLE911
+END OF STMT
+PARSE #61:c=0,e=624,p=0,cr=0,cu=0,mis=1,r=0,dep=0,og=0,tim=1096584486591083
+BINDS #61:
+ bind 0: dty=2 mxl=22(22) mal=00 scl=00 pre=00 oacflg=01 oacfl2=0 size=24 offset=0
+   bfp=4075d87c bln=22 avl=04 flg=05
+   value=105953
+EXEC #61:c=0,e=544,p=0,cr=0,cu=0,mis=0,r=0,dep=0,og=4,tim=1096584486591687

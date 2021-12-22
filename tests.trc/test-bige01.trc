@@ -1,0 +1,18 @@
+*** SESSION ID:(11.1111) 2005-08-01 09:20:32.643
+=====================
+PARSING IN CURSOR #53 len=70 dep=1 uid=47 oct=42 lid=47 tim=1096584406878677 hv=2110961874 ad='6c1c58b8'
+alter session set events='10046 trace name context forever, level  12'
+END OF STMT
+EXEC #53:c=1000000000,e=3000000000,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=4,tim=1096584406878565
+WAIT #0: nam='SQL*Net message to client' ela= 2 p1=1952673792 p2=1 p3=0
+WAIT #0: nam='SQL*Net message from client' ela= 149 p1=1952673792 p2=1 p3=0
+=====================
+PARSING IN CURSOR #55 len=70 dep=1 uid=47 oct=42 lid=47 tim=1096586406878677 hv=2110961876 ad='6c1c58b6'
+alter something set events='10046 trace name context forever, level  12'
+END OF STMT
+EXEC #55:c=1000000000,e=4000000000,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=4,tim=1096586406878565
+=====================
+PARSING IN CURSOR #56 len=70 dep=1 uid=47 oct=42 lid=47 tim=1096589406878678 hv=2110961878 ad='6c1c58b4'
+alter something2 set events='10046 trace name context forever, level  12'
+END OF STMT
+EXEC #56:c=1000,e=4000,p=0,cr=0,cu=0,mis=0,r=0,dep=1,og=4,tim=1096589406878565
